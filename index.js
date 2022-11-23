@@ -6,8 +6,8 @@ const inquirer = require("inquirer");
 const fs = require("fs")
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer))
 
-const { managerCard, engineerCards, internCards } = require("./dist/templates/card") 
-const createHtml = require("./dist/templates/html")
+const { createManagerCard, createEngineerCards, createInternCards } = require("./src/cards") 
+const createHtml = require("./src/html")
 
 inquirer.prompt([
     {
