@@ -12,7 +12,7 @@ const createHtml = require("./src/html")
 inquirer.prompt([
     {
         type: 'input',
-        name: 'name',
+        name: 'nameInput',
         message: "What is the manager's name?",
     },
     {
@@ -43,7 +43,7 @@ inquirer.prompt([
             },
             {
                 type: 'input',
-                name: 'name',
+                name: 'nameInput',
                 message: "What is the employee's name?",
             },
             {
@@ -72,7 +72,7 @@ inquirer.prompt([
     }
 ])
 .then((value) => {
-    const manager = new Manager(value.nameinput, value.id, value.email, value.officeNum)
+    const manager = new Manager(value.nameInput, value.id, value.email, value.officeNum)
     const employees = value.employees
     const engineers = []
     const interns = []
@@ -80,10 +80,10 @@ inquirer.prompt([
     for(let i = 0; i < employees.length; i++) {
         const e = employees[i]
         if (e.type === "Engineer") {
-            const engineer = new Engineer(e.name, e.id, e.email, e.github)
+            const engineer = new Engineer(e.nameInput, e.id, e.email, e.github)
             engineers.push(engineer)
         } else if (e.type === "Intern") {
-            const intern = new Intern(e.name, e.id, e.email, e.school)
+            const intern = new Intern(e.nameInput, e.id, e.email, e.school)
             interns.push(intern)
         }
     }

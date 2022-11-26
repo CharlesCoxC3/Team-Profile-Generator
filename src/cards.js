@@ -1,7 +1,7 @@
 function createManagerCard (manager) {
     const managerCard = `<div class="card">
     <div class="card-title">
-        <h3 class="nameInput">${manager.name}</h3>
+        <h3 class="name">${manager.nameInput}</h3>
         <h4 class="type">Manager</h4>
     </div>
     <div class="card-body">
@@ -19,7 +19,7 @@ function createEngineerCards (engineers) {
         let engineer = engineers[i]
         let card = `<div class="card">
         <div class="card-title">
-            <h3 class="nameInput">${engineer.name}</h3>
+            <h3 class="name">${engineer.nameInput}</h3>
             <h4 class="type">Engineer</h4>
         </div>
         <div class="card-body">
@@ -40,7 +40,7 @@ function createInternCards (interns) {
         let intern = interns[i]
         let card = `<div class="card">
         <div class="card-title">
-            <h3 class="nameInput">${intern.name}</h3>
+            <h3 class="name">${intern.nameInput}</h3>
             <h4 class="type">Intern</h4>
         </div>
         <div class="card-body">
