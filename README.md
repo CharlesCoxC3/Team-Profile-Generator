@@ -40,3 +40,9 @@ N/A
 ## Tests
 
 Refer to the video below or run node index.js to start application
+
+https://app.castify.com/view/1079d417-da46-4f8f-b7d4-f148adc50e2f
+
+file:///Users/charlescoxc3/bootcamp/Team-Profile-Generator/index.html
+
+![Team Profile Generator Demo](https://user-images.githubusercontent.com/112132288/204072309-a5c4bb9e-642a-48ca-8d94-d387c7e78bbf.png)
